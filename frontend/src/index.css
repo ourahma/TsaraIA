@@ -1,0 +1,42 @@
+@import "tailwindcss";
+:root {
+  --color-dark-red-main: #901d1d;
+  --color-dark-red-light: #f8eaea;
+  --color-dark-red-mid: #c95353;
+  --color-dark-red-dark: #120404;
+  --color-beige-main: #e3d4b9;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* My custom colors */
+.bg-dark-red-main    { background-color: var(--color-dark-red-main); }
+.bg-dark-red-light   { background-color: var(--color-dark-red-light); }
+.bg-dark-red-mid     { background-color: var(--color-dark-red-mid); }
+.bg-dark-red-dark    { background-color: var(--color-dark-red-dark); }
+.bg-beige-main       { background-color: var(--color-beige-main); }
+
+.bg-glass-white   { background-color: rgba(255,255,255,0.1); }
+.bg-glass-border  { background-color: rgba(255,255,255,0.2); }
+
+.text-dark-red    { color: var(--color-dark-red-main); }
+
+.bg-gradient-darkred-beige {
+  background: linear-gradient(135deg, var(--color-dark-red-main) 0%, var(--color-beige-main) 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}

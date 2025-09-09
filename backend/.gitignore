@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.bin
+*.pickle
+# Virtual environments
+.venv
+
+
+## the db
+db/
+
+## I downloaded the embedding model and save it to ./models/
+models/
+
+## the data
+data/
