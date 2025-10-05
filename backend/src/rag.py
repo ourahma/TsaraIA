@@ -1,4 +1,5 @@
 from langchain_community.document_loaders import CSVLoader
+from langchain_community.document_loaders import Docx2txtLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain.chains import RetrievalQA
@@ -31,6 +32,9 @@ def load_documents():
             encoding = detect_encoding(file_path)
             loader = CSVLoader(file_path,encoding=encoding)
             documents.extend(loader.load())
+        elif file_name.endswith(".doc"):
+            loader = Docx2txtLoader(file_path)
+            documents.extend(loader.load())
     
     return documents
 
@@ -61,7 +65,7 @@ def create_rag_chain(db):
     try:
         api_key = os.getenv("OPENROUTER_API_KEY")
         #llm = ChatOpenAI(model="meta-llama/llama-4-scout:free", temperature=0.5,api_key=api_key,base_url="https://openrouter.ai/api/v1")
-        llm = ChatOllama(model="mistral:7b",temperature=0.7,base_url="http://localhost:11434",reasoning=False)
+        llm = ChatOllama(model="mistral:7b",temperature=0.7,base_url="http://localhost:11434",reasoning=False,validate_model_on_init=True)
         # Create the RetrievalQA chain
         #    - This connects the LLM with your retriever (vector database).
         #    - The retriever will fetch the most relevant documents (k=3).
@@ -75,6 +79,7 @@ def create_rag_chain(db):
         
         def rag_chain_func(query):
             result = qa_chain.invoke({"query": query})
+            print("result",result)
             return result["result"]
         tool = Tool(
             name="RAG_Chain",
