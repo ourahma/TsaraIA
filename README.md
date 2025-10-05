@@ -66,13 +66,13 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## TsaraIA: Intelligent Tourism Assistant for Morocco
+## Tsara.IA: Intelligent Tourism Assistant for Morocco
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-TsaraIA is an AI-powered agent designed to make travel in Morocco smarter, easier, and more engaging. Built with a Retrieval-Augmented Generation (RAG) architecture, it leverages advanced LLMs, LangChain, and Hugging Face embeddings to provide context-aware answers grounded in reliable local data.
+Tsara.IA is an AI-powered agent designed to make travel in Morocco smarter, easier, and more engaging. Built with a Retrieval-Augmented Generation (RAG) architecture, it leverages advanced LLMs, LangChain, and Hugging Face embeddings to provide context-aware answers grounded in reliable local data.
 
-### What makes TsaraIA unique?
+### What makes Tsara.IA unique?
 
 * Trusted Sources: Information comes from curated datasets, including:
 
@@ -80,17 +80,19 @@ TsaraIA is an AI-powered agent designed to make travel in Morocco smarter, easie
     * Licensed tourism guides and cultural references
     * Local meals, recipes, and authentic culinary insights
 
-* Contextual Understanding: Unlike a simple chatbot, TsaraIA retrieves and synthesizes information from vector databases to deliver relevant, accurate, and personalized answers.
+* Contextual Understanding: Unlike a simple chatbot, Tsara.IA retrieves and synthesizes information from vector databases to deliver relevant, accurate, and personalized answers.
 
 * Cutting-Edge Tech Stack:
 
-    * LLMs for natural language reasoning
-    * LangChain for orchestration and tool integration
-    * Hugging Face embeddings for semantic search and vector retrieval
-    * ChromaDB as the vector database
+    * `LLMs` for natural language reasoning
+    * `LangChain` for orchestration and tool integration
+    * `Hugging Face` embeddings for semantic search and vector retrieval
+    * `ChromaDB` as the vector database.
+    * `React.js` for an intuitive user interface, ensuring easy access to the system’s features and functionality.
+    * `FastApi` : for a fast, reliable, and scalable backend to handle API requests efficiently.
     
 * Database
-    * All documents used to ensure accuracy come from reliable sources, such as ![Govermental website](https://data.gov.ma/data/dataset/), and trused sources for ![dataset](https://www.kaggle.com/)
+    * All documents used to ensure accuracy come from reliable sources, such as [Govermental website](https://data.gov.ma/data/dataset/), and trused sources for [dataset](https://www.kaggle.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

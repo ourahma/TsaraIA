@@ -127,7 +127,7 @@ const ChatbotInterface = () => {
             </div>
 
             <h1 className="text-6xl md:text-7xl font-bold text-dark-red mb-6 bg-clip-text">
-              Tsara IA
+              Tsara.IA
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-900 mb-8 max-w-3xl mx-auto leading-relaxed ">
